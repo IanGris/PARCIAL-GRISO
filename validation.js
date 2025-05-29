@@ -1,4 +1,3 @@
-// validation.js
 export function validateLastName(lastName) {
     const regex = /^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$/;
     return regex.test(lastName);
