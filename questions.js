@@ -11,7 +11,6 @@ export function askQuestions() {
         const answer = prompt(questions[i]);
         answers.push(answer);
     }
-    // Mostrar respuestas en el DOM como campos de texto
     const responsesDiv = document.getElementById('responses');
     responsesDiv.innerHTML = `
         <div class="form-group"><label>Nacionalidad:</label><input type="text" value="${answers[0] || ''}" readonly></div>
