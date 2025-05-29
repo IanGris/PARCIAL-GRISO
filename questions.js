@@ -1,5 +1,3 @@
-// This file contains the JavaScript function to handle progressive questions for the registration form.
-
 export function askQuestions() {
     const questions = [
         '¿Cuál es tu nacionalidad?',
