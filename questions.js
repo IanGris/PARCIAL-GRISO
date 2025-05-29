@@ -18,5 +18,5 @@ export function askQuestions() {
         <p><strong>Color favorito:</strong> ${answers[1]}</p>
         <p><strong>Nombre de tu mascota:</strong> ${answers[2]}</p>
     `;
-    document.getElementById('questionsContainer').style.display = 'block';
+    document.getElementById('questionsContainer').classList.add('visible');
 }
