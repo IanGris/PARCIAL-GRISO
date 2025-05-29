@@ -1,3 +1,5 @@
+// This file contains the JavaScript function to handle progressive questions for the registration form.
+
 export function askQuestions() {
     const questions = [
         '¿Cuál es tu nacionalidad?',
@@ -9,12 +11,12 @@ export function askQuestions() {
         const answer = prompt(questions[i]);
         answers.push(answer);
     }
-    // Mostrar respuestas en el DOM
+    // Mostrar respuestas en el DOM como campos de texto
     const responsesDiv = document.getElementById('responses');
     responsesDiv.innerHTML = `
-        <p><strong>Nacionalidad:</strong> ${answers[0]}</p>
-        <p><strong>Color favorito:</strong> ${answers[1]}</p>
-        <p><strong>Nombre de tu mascota:</strong> ${answers[2]}</p>
+        <div class="form-group"><label>Nacionalidad:</label><input type="text" value="${answers[0] || ''}" readonly></div>
+        <div class="form-group"><label>Color favorito:</label><input type="text" value="${answers[1] || ''}" readonly></div>
+        <div class="form-group"><label>Nombre de tu mascota:</label><input type="text" value="${answers[2] || ''}" readonly></div>
     `;
-    document.getElementById('questionsContainer').classList.add('visible');
+    document.getElementById('questionsContainer').style.display = 'block';
 }
