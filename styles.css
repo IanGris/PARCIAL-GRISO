@@ -36,7 +36,7 @@ input[type="email"] {
   border-radius: 4px;
 }
 
-input[type="button"] {
+button[type="button"] {
   background-color: #0077cc;
   color: white;
   border: none;
@@ -44,9 +44,10 @@ input[type="button"] {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s;
+  width: 100%;
 }
 
-input[type="button"]:hover {
+button[type="button"]:hover {
   background-color: #005fa3;
 }
 
@@ -59,4 +60,24 @@ input[type="button"]:hover {
   margin-top: 10px;
   font-weight: bold;
   color: #0077cc;
+}
+
+.hidden {
+  display: none;
+}
+
+#questionsContainer {
+  display: none;
+  background: #e9f5ff;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#questionsContainer.visible {
+  display: block;
+}
+
+#responses p {
+  margin: 8px 0;
 }
