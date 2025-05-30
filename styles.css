@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #00C5FF;
+  background-color: #0023ff;
   margin: 0;
   padding: 20px;
 }
@@ -58,7 +58,7 @@ button[type="button"]:hover {
 .response {
   margin-top: 10px;
   font-weight: bold;
-  color: #0077cc;
+  color: #00cc6c;
 }
 
 .hidden {
